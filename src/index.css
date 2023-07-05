@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+/*
+AAA7B0 light grey
+516685 dary gery
+EDF7FC light blue
+E6E6E6
+*/
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #516685;
+}
+.conatainer {
+  width: 450px;
+  border: 1px solid #aaa7b0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #000;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 15px;
+  height: 50px;
+  border-bottom: 1px solid #aaa7b0;
+  overflow: hidden;
+}
+.row h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 50px;
+  height: 100%;
+  flex: 1;
+  border-right: 1px solid #aaa7b0;
+}
+.row .addBtn {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  width: 50px;
+  color: #516685;
+  transition: 0.3s;
+  display: block;
+  height: 50px;
+}
+.row .addBtn:hover {
+  color: #000;
+  font-size: 20px;
+  color: #1463ff;
+  background-color: #edf7fc;
+  cursor: pointer;
+}
+.NewTask {
+  background-color: #edf7fc;
+  padding: 10px;
+  border-bottom: 1px solid #aaa7b0;
+  overflow: hidden;
+}
+.form-group {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form-group input,
+.form-group select {
+  outline: none;
+  border: 1px solid #aaa7b0;
+  border-radius: 3px;
+  height: 40px;
+  padding: 0 10px;
+}
+.form-group select {
+  background-color: #fff;
+}
+.form-group label {
+  color: #000;
+}
+.form-group.sub {
+  display: flex;
+  flex-direction: row;
+}
+.form-group.sub .form-group {
+  flex: 1;
+}
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.button-group button,
+.btnDelete {
+  margin-top: 5px;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 18px;
+  width: 75px;
+  font-size: 16px;
+  background-color: transparent;
+  color: #000;
+  transition: 0.3s;
+}
+.button-group button.save {
+  background-color: #1463ff;
+  color: #fff;
+  font-weight: 500;
+}
+.button-group button:hover {
+  scale: 1.1;
+}
+.taskList,
+.taskList .data {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 0 15px 0 0;
+  gap: 10px;
+  color: #000;
+  transition: 0.3s;
+}
+.taskList .data {
+  padding: 15px;
+}
+.taskList:hover {
+  background-color: #edf7fc;
+}
+.taskList .taskBody {
+  flex: 1;
+}
+.taskList .tick {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(107, 105, 105);
+  color: green;
+  font-size: 20px;
+  scale: 1.2;
+  transition: 0.3s;
+}
+.tick.check {
+  color: red;
+}
+.tick:hover {
+  scale: 1.5;
+}
+.fontAwesome {
+  z-index: -1;
+}
+.taskBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.taskTitle {
+  font-size: 24px;
+  font-weight: 500;
+}
+.taskTitle.check {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.taskTime {
+  font-weight: 300;
+}
+.img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.buttonRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btnDelete {
+  color: red;
+  width: auto;
+  font-size: 20px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.btnDelete:hover {
+  scale: 1.1;
+  text-shadow: 0 0 5px #000;
+}
+@media (max-width: 500px) {
+  .conatainer {
+    width: 100%;
+  }
+}
