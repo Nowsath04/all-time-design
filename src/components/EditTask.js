@@ -118,8 +118,8 @@ const EditTask = ({
             value={editUser}
             onChange={(e) => setEditUser(e.target.value)}
           >
-            <option value="one">One</option>
-            <option value="two">Two</option>
+            <option value="Naveen">Naveen</option>
+            <option value="Dhameem">Dhameem</option>
           </select>
         </div>
         <div className="buttonRow">

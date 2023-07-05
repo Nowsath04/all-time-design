@@ -109,10 +109,8 @@ const NewTask = ({
             required
             onChange={(e) => setAssignUser(e.target.value)}
           >
-            <option value="one">One</option>
-            <option value="two">Two</option>
-            <option value="three">Three</option>
-            <option value="four">Four</option>
+            <option value="Naveen">Naveen</option>
+            <option value="Dhameem">Dhameem</option>
           </select>
         </div>
         <div className="button-group">
